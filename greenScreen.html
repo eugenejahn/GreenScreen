@@ -1,0 +1,47 @@
+<html>
+
+
+  <script src = "https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js">
+  </script>
+
+  <script src="image.js">
+</script>
+  
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+
+  <h1>Green Screen Prototype:</h1>
+  
+  <h3 id = "boldHeadline">for testing</h3>
+  
+  <canvas id="greenCanvas"></canvas> 
+  <canvas id="backCanvas"></canvas> 
+  <br>
+  <br>
+  
+<!-- 
+  First name: <input type="text" name="fname">
+  Last name: <input type="text" name="lname"><br> -->
+  
+  
+  <input type= "file" multiple= "false" accept= "image/*" id = "imageInput1" onchange= "doUpload1()">
+  <br>
+
+  <input type= "file" multiple= "false" accept= "image/*" id = "imageInput2" onchange= "doUpload2()">
+  <br>
+  
+  <input type="submit" value="combine" onclick = "doCombine()">
+  <br>
+  
+  <input type="submit" value="chage color to gray" onclick = "doGray()">
+  <input type="submit" value="redo" onclick = "redo()">
+  <input type="submit" value="clear" onclick = "doClear('greenCanvas')">
+  
+</body>
+
+</html>
+
+
